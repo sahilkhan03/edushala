@@ -16,3 +16,6 @@ let routes = require("./routes/index");
 
 //Use all routes
 app.use("/", routes);
+app.get("*", (req, res) =>
+  res.render("404", { title: "404 Not Found | Edushala" })
+);
