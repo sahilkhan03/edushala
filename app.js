@@ -10,3 +10,9 @@ app
   .set("views", path.join(__dirname, "views"))
   .set("view engine", "ejs")
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+//Require all routes
+let routes = require("./routes/index");
+
+//Use all routes
+app.use("/", routes);
