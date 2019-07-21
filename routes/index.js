@@ -15,4 +15,8 @@ router.get("/services", (req, res) => {
   res.render("services", { title: "Services | Edushala" });
 });
 
+router.get("/pricing", (req, res) => {
+  res.render("pricing", { title: "Pricing | Edushala" });
+});
+
 module.exports = router;
